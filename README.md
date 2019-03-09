@@ -2,5 +2,5 @@
 
 add to routes/web.php
 ```php
-$router->get('/user/view', 'UserController@view');
+$router->post('/user/view', 'UserController@view');
 ```
