@@ -1,5 +1,5 @@
 {
-    "name":"mkaaaaaaay/lumen-user-controller",
+    "name":"jonathan-martz/lumen-user-controller",
     "description":"Php Lumen User Controller",
     "require":{
         "php":"^7.1",
