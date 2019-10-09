@@ -18,8 +18,7 @@ class UserController extends Controller
 
         ]);
 
-        $todo = DB::connection('mysql.read')
-            ->table('users')
+        $todo = DB::table('users')
             ->where('id','=',$request->user()->getAuthIdentifier());
 
         $count = $todo->count();
