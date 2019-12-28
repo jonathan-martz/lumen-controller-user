@@ -1,13 +1,19 @@
 {
-    "name":"jonathan-martz/lumen-user-controller",
-    "description":"Php Lumen User Controller",
-    "require":{
-        "php":"^7.1",
+    "name": "jonathan-martz/lumen-controller-user",
+    "description": "Php Lumen User Controller",
+    "require": {
+        "php": "^7.3|^7.4",
         "laravel/lumen-framework": "^6.2.0",
-        "jonathan-martz/lumen-controller": "^0.2"
+        "jonathan-martz/lumen-controller": "^0.2",
+        "jonathan-martz/lumen-middelware-xss": "^0.1",
+        "jonathan-martz/lumen-middelware-https": "^0.1",
+        "jonathan-martz/lumen-middelware-auth": "^0.2"
     },
     "autoload": {
-        "classmap": ["controller/"]
+        "classmap": [
+            "controller/",
+            "provider/"
+        ]
     },
     "authors": [
         {
@@ -16,5 +22,12 @@
             "homepage": "https://www.jmartz.de",
             "role": "Developer"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Providers\\UserProvider"
+            ]
+        }
+    }
 }
