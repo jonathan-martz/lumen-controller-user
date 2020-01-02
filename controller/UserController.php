@@ -5,9 +5,16 @@ namespace App\Http\Controllers;
 use App\Model\User;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * Class UserController
+ * @package App\Http\Controllers
+ */
 class UserController extends Controller
 {
 
+    /**
+     * @return mixed
+     */
     public function view()
     {
         $validation = $this->validate($this->request, [
